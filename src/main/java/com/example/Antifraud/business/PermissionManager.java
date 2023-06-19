@@ -1,7 +1,8 @@
-package com.example.Antifraud;
+package com.example.Antifraud.business;
 
 
-import org.hibernate.dialect.SybaseDialect;
+import com.example.Antifraud.persistence.entities.UserEntity;
+import com.example.Antifraud.persistence.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.http.HttpMethod;
@@ -15,7 +16,6 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.stereotype.Service;
 
-import java.net.http.HttpRequest;
 import java.util.Collection;
 import java.util.List;
 
